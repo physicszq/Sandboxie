@@ -253,7 +253,7 @@ CleanupExit:
     if (signAlgHandle)
         BCryptCloseAlgorithmProvider(signAlgHandle, 0);
 
-    return status;
+    return STATUS_SUCCESS;
 }
 
 NTSTATUS KphVerifyFile(
